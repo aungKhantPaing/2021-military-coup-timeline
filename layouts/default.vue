@@ -23,8 +23,30 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
+    <v-footer :absolute="!fixed" app class="px-2">
       <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-spacer></v-spacer>
+      <v-btn
+        icon
+        small
+        link
+        href="https://github.com/halchester/2021-military-coup-timeline"
+        target="_"
+        @click.stop
+      >
+        <v-icon>mdi-database</v-icon>
+      </v-btn>
+      <v-divider vertical class="mx-1"></v-divider>
+      <v-btn
+        icon
+        small
+        link
+        href="https://github.com/aungKhantPaing/2021-military-coup-timeline/tree/master"
+        target="_"
+        @click.stop
+      >
+        <v-icon @click.stop>mdi-github</v-icon>
+      </v-btn>
     </v-footer>
   </v-app>
 </template>
