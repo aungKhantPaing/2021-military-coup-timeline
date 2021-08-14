@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "myanmar-coup-timeline-2021",
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
